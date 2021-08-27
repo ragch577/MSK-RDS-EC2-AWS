@@ -2,23 +2,24 @@ from kafka import KafkaConsumer
 import psycopg2
 from json import loads
 
-consumer = KafkaConsumer('awskafkatopic1',bootstrap_servers=['b-1.mskcsv.lk7gvq.c4.kafka.eu-north-1.amazonaws.com:9092'],consumer_timeout_ms=10000)
+consumer = KafkaConsumer('awskafkatopic1',bootstrap_servers=['b-1.mskcsv.******.c4.kafka.eu-north-1.amazonaws.com:9092'],consumer_timeout_ms=10000)
 
 
 #conn = psycopg2.connect(
 #            database = "mskdatabase",
 #            user = "postgres",
 #            password = "Admin1234",
-#            host = "database-1.c93rjjowwu18.eu-north-1.rds.amazonaws.com",
+#            host = "database-1.**********.eu-north-1.rds.amazonaws.com",
 #            port = "5432"
 #            )
 
-conn = psycopg2.connect(dbname='mskdatabase',user='postgres',host='16.170.138.152',password='Admin1234',port='5432')
+# Add your RDS IP address here.
+conn = psycopg2.connect(dbname='mskdatabase',user='postgres',host='**.***.***.***',password='Admin1234',port='5432')
 
 #conn.close()
 #def postgres_test():
 #    try:
-#        conn = psycopg2.connect(dbname='mskdatabase',user='postgres',host='base-1.c93rjjowwu18.eu-north-1.rds.amazonaws.com',
+#        conn = psycopg2.connect(dbname='mskdatabase',user='postgres',host='base-1.************.eu-north-1.rds.amazonaws.com',
 #                password='Admin1234',port='5432')
 #conn.close()
 #        return print("Connected to DB successfully")
