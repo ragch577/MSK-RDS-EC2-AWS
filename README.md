@@ -1,1 +1,1 @@
-# MSK-RDS-EC2-AWS
+# Amazon Managed Streaming for Apache Kafka-RDS-EC2-AWS
