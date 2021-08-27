@@ -8,10 +8,13 @@
   https://kafka.apache.org/downloads
 - untar Kafka_2.13-2.8.0.tgz
 - Install java on EC2.
-- Careate a toipc on EC2 instance as, https://docs.aws.amazon.com/msk/latest/developerguide/create-topic.html
-- Careate a topics using the follwoing command, 
+- Create a toipc on EC2 instance as, https://docs.aws.amazon.com/msk/latest/developerguide/create-topic.html
+- Create a topics using the following command, 
  
+  Topic name in this example is "AWSKafkaTutorialTopic"
+  
   bin/kafka-topics.sh --create --zookeeper "ZookeeperConnectString" --replication-factor 3 --partitions 1 --topic AWSKafkaTutorialTopic
+  
 - The ZookeeperConnectStrig looks like this, z-1.mskcsv.******.c4.kafka.eu-north-1.amazonaws.com:2181 (Find on MSK)
 - Create a Postgres DB on aws
 - Use this scheme to create the table,
